@@ -54,14 +54,17 @@ old_project_entries:
     desc: The better people know you, the better they collaborate
 
 footer_entries:
-  - title: abhinav's homepage
-    url: https://www.abhinav.co
+  - title: My homepage
+    url: https://rmiravalles.github.io/
+
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/rodrigomiravalles/
 
   - title: twitter
-    url: https://twitter.com/abhinav
+    url: https://twitter.com/r_miravalles
 
   - title: github
-    url: https://github.com/abhinavs
+    url: https://github.com/rmiravalles
 
   - title: feed
     url: feed.xml
