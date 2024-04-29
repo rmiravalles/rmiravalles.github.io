@@ -3,6 +3,8 @@ author: Rodrigo Miravalles
 url: https://rmiravalles.github.io/ # root address of the site
 description: > # description of the site (multiple lines allowed)
   Yet another attempt to document what I'm learning and discovering.
+  I'm still learning Azure, so you'll find a lot of that here. I'll add bits of Kubernetes too, since that's what I've been mostly studying these days.
+  There will be music too.
 
 permalink: /:slug
 
@@ -25,18 +27,17 @@ theme_config:
   show_footer: true # show footer links in home page,add in _data/home.yml
   show_copyright: true # show copyright notice in footer
   # following keys are using to create home layout
-  show_projects: true # show projects as cards, add in _data/home.yml
+  show_projects: false # show projects as cards, add in _data/home.yml
   show_blog: true # show blog posts added in _posts
-  show_old_projects: true # show old projects as cards, add in _data/home.yml
-  show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
+  show_old_projects: false # show old projects as cards, add in _data/home.yml
+  show_misc_list: true # show generic vertical list for misc details, add _data/home.yml
   show_reading_time: true # show number of words and reading time in the blog posts
   show_tags: true # show tags in a blog posts
   # options for "home" page
   home:
-    title_projects: Resume
-    title_misc_list: Details
+    title_projects: Projects
+    title_misc_list: Other things
     title_blog: Blog
-    title_old_projects: Other things
 
 soopr:
   publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
