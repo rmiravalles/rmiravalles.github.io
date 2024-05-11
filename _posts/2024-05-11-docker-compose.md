@@ -6,7 +6,7 @@ title: "Docker Compose"
 
 Docker Compose is a super cool tool that allows you to define and manage multi-container applications. You can run a project with with multiple containers from a single YAML file. With a single command, you can start and stop all your services.
 
-Docker Compose relies on a YAML file to make its magic. This file is usually called `composed.yaml`. I've seen cases where it's called `docker-compose.yaml` too, but the preferred one, according to Docker official documents, is `compose.yaml`. This file lives in the workinf directory.
+Docker Compose relies on a YAML file to make its magic. This file is usually called `compose.yaml`. I've seen cases where it's called `docker-compose.yaml` too, but the preferred one, according to Docker official documents, is `compose.yaml`. This file lives in the workinf directory.
 
 ## The Compose application model
 
