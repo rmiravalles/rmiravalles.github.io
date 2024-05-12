@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Docker Compose"
+title: "The basics of Docker Compose"
 ---
 # Docker Compose in a nutshell
 
-Docker Compose is a super cool tool that allows you to define and manage multi-container applications. You can run a project with with multiple containers from a single YAML file. With a single command, you can start and stop all your services.
+When you start using Docker extensively, there will come a time when you have a huge number of containers that you need to care for and manage. Docker Compose is a super cool tool that will help you with this otherwise cumbersome task. You can easily manage multiple containers from a single file. 
 
-Docker Compose relies on a YAML file to make its magic. This file is usually called `compose.yaml`. I've seen cases where it's called `docker-compose.yaml` too, but the preferred one, according to Docker official documents, is `compose.yaml`. This file lives in the workinf directory.
+Docker Compose relies on a YAML file to make its magic. All the instructions to fire up your containers, what images to use, how to set its configuration, the volumes, networking settings, and also secrets are defined in a single YAML file. This file is usually called `compose.yaml`. You'll see this file with the name of `docker-compose.yaml` too, but the preferred one, according to Docker official documents, is `compose.yaml`.
+
+> YAML, which stands for *YAML Ain't Markup Language* (originally, it was said to mean *Yet Another Markup Language*), is widely used today. It's easy to learn, and I recommed you take a look at [Learn YAML in Y minutes](https://learnxinyminutes.com/docs/yaml/)
 
 ## The Compose application model
 
@@ -14,15 +16,17 @@ I read this in [Docker's official documentation on Compose](https://docs.docker.
 
 > Computing components of an application are defined as **services**. Services communicate with each other through **networks**. Services store and share persistent data into **volumes**. Some services require configuration data that is dependent on the runtime or platform. This is defined as **configs**. A **secret** is for sensittive data that shouldn't be exposed.
 
-The above are the main components of a Docker Compose file, that will define your deployment. To interact with your Compose application, you use the **Comppose CLI**.
+In your Docker Compose file, you'll define the **services**, the **networks**, the **volumes**, the **configs**, and the **secrets** of your apllication stack.
+
+To interact with your Compose application, you use the **Comppose CLI**.
 
 # Installing Docker Compose
 
-In the [Docker Docs on how to install Docker Compose](https://docs.docker.com/compose/install/linux/), they suggest 2 ways: using the apt repository (you need to add the repository to Apt) or doing it manually. I did it manually. The result was interesting. I installed it successfully, but the result was interesting. Let me show you.
+In the [Docker Docs on how to install Docker Compose](https://docs.docker.com/compose/install/linux/), they suggest 2 ways: using the apt repository (you need to add the repository to Apt) or doing it manually. I installed it manually, and the result was interesting. Let me show you.
 
 To install it manually, these are the 4 commands you need to run.
 
-```
+```bash
 DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
 mkdir -p $DOCKER_CONFIG/cli-plugins
 curl -SL https://github.com/docker/compose/releases/download/v2.27.0/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
@@ -38,7 +42,7 @@ It installed version v2.20.3! Why?
 
 To see Docker Compose in action, I built a very simple Docker Compose file. There are 3 services, that represent 3 different versions of that app from the previous article. That one had 2 versions. I created a third one for this experiment.
 
-This is the Docker Compose file.
+This is the Docker Compose file. The first line, [name](https://docs.docker.com/compose/compose-file/04-version-and-name), is a property that you can use to give your project a name. Under I'm defining the [services](https://docs.docker.com/compose/compose-file/05-services). I omitted the other elements, for simplicity.
 
 ```yaml
 name: theapp
@@ -74,7 +78,7 @@ And here are the 3 apps running in their respective ports.
 
 ![App 3 on port 8063](../assets/images/dockercomposeapp3.png)
 
-I spun up 3 application using a single YAML file, and that's powerful!
+I spun up 3 applications using a single YAML file, and that's powerful!
 
 There's a lot more to Docker Compose, and I may dedicate an additional article or 2 to it, as I move along with my studies.
 
