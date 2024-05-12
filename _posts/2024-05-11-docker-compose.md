@@ -42,7 +42,7 @@ It installed version v2.20.3! Why?
 
 To see Docker Compose in action, I built a very simple Docker Compose file. There are 3 services, that represent 3 different versions of that app from the previous article. That one had 2 versions. I created a third one for this experiment.
 
-This is the Docker Compose file. The first line, [name](https://docs.docker.com/compose/compose-file/04-version-and-name), is a property that you can use to give your project a name. Under I'm defining the [services](https://docs.docker.com/compose/compose-file/05-services). I omitted the other elements, for simplicity.
+This is the Docker Compose file. The first line, [name](https://docs.docker.com/compose/compose-file/04-version-and-name), is a property that you can use to give your project a name. Below it, I'm defining the [services](https://docs.docker.com/compose/compose-file/05-services). I omitted the other elements, for simplicity.
 
 ```yaml
 name: theapp
