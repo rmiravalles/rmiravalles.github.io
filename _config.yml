@@ -40,7 +40,7 @@ theme_config:
     title_blog: Blog
 
 soopr:
-  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
+  publish_token: "pt_f9df343e35da656cb4fe05243067f7a8" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
 
 highlighter: rouge
 
