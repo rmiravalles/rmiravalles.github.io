@@ -40,6 +40,6 @@ Here I am, inside the group.
 
 ![/etc/group](../assets/images/etcgroup.png)
 
-And now I can run Docker commands without the need to type `sudo` and save a fraction of a second every time I do it!
+And now I can run Docker commands without the need to type `sudo` and I can save a fraction of a second every time I do it!
 
 
