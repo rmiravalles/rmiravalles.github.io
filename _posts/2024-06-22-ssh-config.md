@@ -49,6 +49,10 @@ Host hostname2
     User johndoe
     Port 22
 ```
+Now, if want to connect to my control plane node, I simply this.
+
+`ssh cp1`
+
 >What I mentioned above works only for the current user. If you want to use these aliases system-wide, you need to edit the `/etc/ssh/ssh_config` file.
 
 # Save time
