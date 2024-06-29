@@ -49,7 +49,7 @@ Host hostname2
     User johndoe
     Port 22
 ```
-Now, if want to connect to my control plane node, I simply this.
+Now, if want to connect to my control plane node, I simply type this.
 
 `ssh cp1`
 
