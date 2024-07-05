@@ -38,11 +38,35 @@ If you want to make it persist across sessions, you need to edit the `bashrc` fi
 
 `vim ~/.bashrc`
 
-Move down the lines with `j`, and find a cosy place for the following line: `alias k='kubectl'`. Ah, you need to hit **I** before entering any text in *Vim*. When you're done, hit **Esc** to go back to the normal mode. Now this is the part people joke about. How to exit *Vim*? To save your changes and close the file, type this: `:wq`. And you're out of *Vim*.
+Move down the lines with `J`, and find a cosy place for the following line: `alias k='kubectl'`. Ah, you need to hit `I` before entering any text in *Vim*. When you're done, hit the `Esc` button to go back to the normal mode. Now this is the part people joke about. How to exit *Vim*? To save your changes and close the file, type this: `:wq`. And you're out of *Vim*.
 
 ![bashrc](../assets/images/bashrc.png)
 
 Above you can see how my `bashrc` file looks like, after adding this `k` alias. You can add other aliases there too. The `kubectl` auto completion is there too. Another super useful tool you must start using, if you aren't already. I'll write about in a future article.
+
+# Autocompletion
+
+I wasn't going to write about it today, but I must, after watching [Mischa Van der Burg's](https://mischavandenburg.substack.com/) Kubernetes course. I wasn't aware that the tab autocompletion didn't work with the `k` alias! For it to work, you need to add yet another line to your `bashrc` file. But first let's see how to get the tab autocompletion going
+
+## Installing bash-completion
+
+To install `bash-completion`, run the following.
+
+`sudo apt install bash-completion`
+
+## Editing the bashrc file
+
+Once you have `bash-completion` installed, add this line to your `bashrc` file.
+
+`source <(kubectl completion bash)`
+
+From now on, you can simply start typing the first letters of a kubectl command and hit the Tab button. It will autocomplete the command for you, or it will suggest a number of possible commands to be used. It's super handy! But it doesn't work with just the `k` out of the box! For that, you need to add yet another line to the `bashrc` file. This is the one.
+
+`complete -o default -F __start_kubectl k`
+
+You may need to restart the shell for the change to take into effect.
+
+Thank you Mischa!
 
 Thank you for reading this far.
 
