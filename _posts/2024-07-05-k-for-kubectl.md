@@ -10,7 +10,7 @@ I bet you've heard it many times. DevOps engineers are lazy, and that's why they
 
 Don't be lazy! But don't waste your time either!
 
-# save time and brain power
+# Save time and brain power
 
 It took me some time to implement this one. I want to save time and energy, obviously, but I'm very forgetful. What a lame excuse, isn't it?
 
