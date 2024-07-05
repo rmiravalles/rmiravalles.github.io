@@ -16,7 +16,7 @@ The command to `ssh` into a remote machine is as follows:
 
 `ssh -p 22 user@server.com` or `ssh -p 22 user@192.168.1.2`
 
-In the command above, `22` is the port number, `user` is the username, and the part that comer after the `@` can be either the hostname or the IP address of the remote server youwant to connect to.
+In the command above, `22` is the port number, `user` is the username, and the part that comer after the `@` can be either the hostname or the IP address of the remote server you want to connect to.
 
 # The SSH Config file
 
@@ -34,7 +34,7 @@ It looks like this.
 
 ![ssh config](../assets/images/sshconfigfile.png)
 
-Each section starts with `Host`. This is the name you're going to use to connect to the remote server. Below that are the values you use to connect. No indentantion is actually needed, but it's good to use, for clarity.
+Each section starts with `Host`. This is the name you're going to use to connect to the remote server. Below that are the values you use to connect. No indentantion is actually needed, but it's good to use it, for clarity.
 
 Below is another example. 
 
@@ -49,7 +49,7 @@ Host hostname2
     User johndoe
     Port 22
 ```
-Now, if want to connect to my control plane node, I simply type this.
+Now, if I want to connect to my control plane node, I simply type this.
 
 `ssh cp1`
 
