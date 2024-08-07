@@ -14,6 +14,6 @@ These days I've been listening to [José Gonzalez](https://jose-gonzalez.com/) a
 
 This is his version of Massive Attack's Teardrop. The video is incredible too!
 
-{% include youtube.html id="6rIks03cdM" %}
+{% include youtube.html id="_6rIks03cdM" %}
 
 Expect more music here, now that I know how to embed videos. :)
