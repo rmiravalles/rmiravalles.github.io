@@ -34,16 +34,13 @@ Inside this `_includes` directory, you need to create a file called `youtube.htm
 </div>
 ```
 
-Now, when you want to embed a YouTube video in your Jekyll posts, instead of posting the entire iframe block, you simply paste the following.
+Now, when you want to embed a YouTube video in your Jekyll posts, instead of posting the entire iframe block, you simply paste the following line.
 
-<div>
-
-```
-    {% include youtube.html id="VIDEO_ID" %}
-```
-</div>
+![includes](../assets/images/includes.png)
 
 Just replace `VIDEO_ID` with the video's ID. This is the sequence of characters that come after the `watch?v=` in the video's URL.
+
+> Here I want to highlight this issue that's bugging me. I can't find a way to use the code depicted in the image above in this Markdown file. I wanted to have what's in the image as a text in this file, but I can't seem to find how and it's bugging me. It always show the HTML lines that are in the `youtube.html` file. It's giving me headaches! Do you know how I can do it?
 
 The video below uses this technique.
 
