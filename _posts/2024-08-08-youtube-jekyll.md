@@ -10,7 +10,7 @@ I thought it's a good idea to share the process here. I'll always do my best to 
 
 ## Paste the iframe code
 
-The fastest and simplest way to embed a video in your post is to simply copy and paste the iframe code directly in your Markdown post file. 
+The fastest and simplest way to embed a video in your post is to simply copy and paste the iframe code directly in your Markdown post file.
 
 This is a hawntingly beautiful song from [Slowdive's](https://slowdiveofficial.com/) latest album, Everything is Alive. They broke up in 1995 and spent many years without releasing any songs. This album is from 2023.
 
@@ -37,7 +37,7 @@ Inside this `_includes` directory, you need to create a file called `youtube.htm
 Now, when you want to embed a YouTube video in your Jekyll posts, instead of posting the entire iframe block, you simply paste the following.
 
 ```
-{% include youtube.html id="VIDEO_ID" %}
+    {% include youtube.html id="VIDEO_ID" %}
 ```
 
 Just replace `VIDEO_ID` with the video's ID. This is the sequence of characters that come after the `watch?v=` in the video's URL.
