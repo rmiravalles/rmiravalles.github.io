@@ -36,7 +36,9 @@ Inside this `_includes` directory, you need to create a file called `youtube.htm
 
 Now, when you want to embed a YouTube video in your Jekyll posts, instead of posting the entire iframe block, you simply paste the following.
 
-`{% include youtube.html id="VIDEO_ID" %}`
+```
+{% include youtube.html id="VIDEO_ID" %}
+```
 
 Just replace `VIDEO_ID` with the video's ID. This is the sequence of characters that come after the `watch?v=` in the video's URL.
 
