@@ -1,9 +1,6 @@
 ---
 layout: post
 title: "Getting started with Pulumi"
-tags: [azure, pulumi, python]
-author: "Rodrigo"
-description: "A beginner's guide to using Pulumi with Azure."
 ---
 # Getting back to the blog
 
@@ -170,5 +167,9 @@ To delete the resources created by Pulumi, you can run the `pulumi destroy` comm
 ## This is only the beginning of my Pulumi journey
 
 I'm dying to speak about the code in the files, but I think this article is long enough already. I'll leave that for the next article.
+
+I always like to end an article with a bit of music. Here's the latest collaboration between Mark Pritchard and Thom Yorke. The video is nuts!
+
+{% include youtube.html id="m32xZaxzadw" %}
 
 Thanks for reading!
