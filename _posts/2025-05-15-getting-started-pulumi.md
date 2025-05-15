@@ -4,7 +4,7 @@ title: "Getting started with Pulumi"
 ---
 # Getting back to the blog
 
-Hello! It's been too long since I last wrote here, far too long.
+Hello! Welcome back to the blog. It's been too long since I last wrote here, far too long.
 
 I've been busy with work and family life, but it doesn't exactly mean I don't have the time. I often struggle with finding the right subjects to write about. To be honest, it boils down to the imposter syndrome. It's all been said and done. I'm the least qualified out there to write anything about any subject. But you know what? Let's do it!
 
