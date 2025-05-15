@@ -48,6 +48,13 @@ jobs:
         run: |
           ruby-build 3.1.4 /opt/hostedtoolcache/Ruby/3.1.4/x64
           echo "Ruby installed at /opt/hostedtoolcache/Ruby/3.1.4/x64"
+          echo "::add-path::/opt/hostedtoolcache/Ruby/3.1.4/x64/bin"
+
+      - name: Set up environment variables
+        run: |
+          echo "GEM_HOME=/opt/hostedtoolcache/Ruby/3.1.4/x64/lib/ruby/gems/3.1.0" >> $GITHUB_ENV
+          echo "GEM_PATH=/opt/hostedtoolcache/Ruby/3.1.4/x64/lib/ruby/gems/3.1.0" >> $GITHUB_ENV
+          echo "PATH=/opt/hostedtoolcache/Ruby/3.1.4/x64/bin:$PATH" >> $GITHUB_ENV
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
