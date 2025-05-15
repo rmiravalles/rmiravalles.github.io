@@ -125,7 +125,7 @@ I also forgot to mention that I created a new folder for the project. I called i
 ```
 VM
 ├── Pulumi.yaml
-|--> Pulumi.dev.yaml
+|-- Pulumi.dev.yaml
 ├── __main__.py
 ├── __pycache__
 ├── requirements.txt
