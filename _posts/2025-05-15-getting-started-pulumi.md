@@ -116,6 +116,7 @@ This will show you all the available templates for Azure. For this experiment, I
 ```bash
 pulumi new azure-vm-python
 ```
+
 When you run this command, Pulumi will prompt you to provide some configuration options for your new project. I just hit enter for all the options, with the plan to change them later.
 
 I forgot to mention that you need to be logged in to Azure. To do this, run the `az login` command. This will open a browser window where you can log in to your Azure account.
@@ -148,7 +149,7 @@ To deploy the infrastructure, we need to run the `pulumi up` command. This comma
 
 ## The results and the setbacks
 
-I was met with a few errors when Pulumi tried to create the resources. The first one was related to the VM size I chose. I chose a size that was didn't have available quotas in West Europe, the region I was using. It worked after I changed the size. This was a good learning experience, because I learned new commands to check the available sizes and quotas in Azure. To see the available sizes, run the following command:
+I was met with a few errors when Pulumi tried to create the resources. The first one was related to the VM size I chose. I chose a size that didn't have available quotas in West Europe, the region I was using. It worked after I changed the size. This was a good learning experience, because I learned new commands to check the available sizes and quotas in Azure. To see the available sizes, run the following command:
 
 ```bash
 az vm list-usage --location westeurope --output table
