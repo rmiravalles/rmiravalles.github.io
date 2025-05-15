@@ -161,6 +161,12 @@ In the image below, you can see the result of the last `pulumi up` command. Only
 
 ![Pulumi up](../assets/images/pulumiupvm.png)
 
+# Pulumi destroy
+
+To delete the resources created by Pulumi, you can run the `pulumi destroy` command. This command will delete all the resources created by the project in the stack, but it won't destroy the stack itself. It sounds super scary, and aggressive! This command should be used with the utmost care. More on this later.
+
+![Pulumi destroy](../assets/images/pulumidestroy.png)
+
 ## This is only the beginning of my Pulumi journey
 
 I'm dying to speak about the code in the files, but I think this article is long enough already. I'll leave that for the next article.
