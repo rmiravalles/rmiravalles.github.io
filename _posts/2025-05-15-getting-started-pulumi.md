@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Getting started with Pulumi"
+tags: [pulumi, azure, python]
 ---
 # Getting back to the blog
 

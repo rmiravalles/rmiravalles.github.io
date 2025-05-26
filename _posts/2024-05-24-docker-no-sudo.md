@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Running Docker commands without the sudo"
+tags: [docker, containers, linux]
 ---
 # Don't forget sudo!
 

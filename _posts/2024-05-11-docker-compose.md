@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The basics of Docker Compose"
+tags: [docker, containers]
 ---
 # Docker Compose in a nutshell
 

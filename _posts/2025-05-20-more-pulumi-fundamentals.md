@@ -192,8 +192,8 @@ resource_group = azure_native.resources.ResourceGroup(
 )
 ```
 
-This line creates a new resource group using the `ResourceGroup` class from the Azure Native provider. The parameters are:
-- `f"pulumi-lab-{stack}-rg"`: The name of the resource group. This is a unique name for the resource group, and it includes the stack name to make it unique. This is NOT the actual name of the resource group, but a unique name for the resource in Pulumi.
+This block of code creates a new resource group using the `ResourceGroup` class from the Azure Native provider. The parameters are:
+- `f"pulumi-lab-{stack}-rg"`: The name of the resource group. This is a unique name for the resource group. Here I used an f-string that includes the stack name to make it unique. This is NOT the actual name of the resource group you'll see in Azure, but a unique name for the resource in Pulumi.
 - `resource_group_name=f"pulumi-demo-{stack}-rg"`: The name of the resource group. This is the name that you will see in Azure.
 - `tags`: A dictionary of tags to apply to the resource group. Tags are key-value pairs that can be used to organize and manage resources in Azure.
 
@@ -204,7 +204,7 @@ Note here that I didn't use the `location` parameter. This is because I set the 
 pulumi.export("ResourceGroupName", resource_group.name)
 pulumi.export("ResourceGroupLocation", resource_group.location)
 ```
-This line exports the resource group name and location. This allows you to see the values in the Pulumi console and use them in other parts of the program. The `pulumi.export` function takes two arguments: the name of the export and the value to export.
+This block exports the resource group name and location. This allows you to see the values in the console and use them in other parts of the program. The `pulumi.export` function takes two arguments: the name of the export and the value to export.
 The name of the export is used to identify the value in the Pulumi console, and the value is the value to export.
 
 # Pulumi up
